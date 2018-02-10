@@ -5,7 +5,6 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import styled  from 'styled-components'
-import logo from './../gif/jn.gif'
 
 const Background = styled.div`
   height: 100%;
@@ -216,7 +215,7 @@ export default class Template extends React.Component {
 
         <Container className="LayoutContainer">
           <PaddingMobile>
-            <Link to="/"><Logo src={logo} /></Link>
+            <Link to="/">LINK</Link>
 
             <NavMenu className="Nav Menu">
               <Link to="/about/"><NavItem>About.i</NavItem></Link>

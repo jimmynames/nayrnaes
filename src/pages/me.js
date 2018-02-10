@@ -1,8 +1,5 @@
 import React from "react"
 import styled from 'styled-components';
-import me from './../images/me.png'
-import plant from './../images/plantlife.png'
-import fish from './../images/fish.png'
 
 const Page = styled.div`
   width: 100%;
@@ -89,11 +86,6 @@ export default class Index extends React.Component {
                <ContactLi><a href="https://jimmynames.tumblr.com/" target="_blank"><h1>tumblr - //jimmynames.</h1></a></ContactLi>
                <ContactLi><a href="https://soundcloud.com/somepeoplecallmejames" target="_blank"><h1>Soundcloud - /somepeoplecallmejames</h1></a></ContactLi>
                <ContactLi gallery>
-                 <Gallery>
-                   <Window src={me} />
-                   <Window src={plant} />
-                   <Window src={fish} />
-                 </Gallery>
                </ContactLi>
            </ContactUl>
         </ContactContainer>

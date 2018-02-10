@@ -1,6 +1,5 @@
 import React from "react"
 import styled from 'styled-components'
-import logo from './../images/logo.png'
 // import Page from './../components/Page'
 
 const Page = styled.div`

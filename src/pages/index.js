@@ -1,6 +1,5 @@
 import React from "react"
 import styled from 'styled-components'
-import welcome from './../gif/welcome.gif'
 
 const Page = styled.div`
   width: 100%;
@@ -80,7 +79,6 @@ export default class Index extends React.Component {
               welcome to my website, please enjoy your stay welcome to my website, please enjoy your stay welcome to my website, please enjoy your stay  welcome to my website, please enjoy your stay  welcome to my website, please enjoy your stay  welcome to my website, please enjoy your stay welcome to my website, please enjoy your stay welcome to my website, please enjoy your stay welcome to my website, please enjoy your stay welcome to my website, please enjoy your stay welcome to my website, please enjoy your stay welcome to my website, please enjoy your stay welcome to my website, please enjoy your stay  welcome to my website, please enjoy your stay
             </P>
           </ScrollLeft>
-          <Welcome src={welcome} />
         </AboutContainer>
       </Page>
     )
