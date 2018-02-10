@@ -48,10 +48,10 @@ const VerticalCenterAlign = styled.div`
 
 `
 
-const RuinLogo = styled.img`
-  height: 30px;
-  margin: 0;
-`
+// const RuinLogo = styled.img`
+//   height: 30px;
+//   margin: 0;
+// `
 
 const CubeContainer = styled.div`
   display: flex;
@@ -103,7 +103,7 @@ export default class Index extends React.Component {
         <AboutContainer>
           <h1>My names James but most people call me Jimmy</h1>
           <h2>I live on the internet under the alias of 👔<i>Jimmy✨Names</i>👽</h2>
-          <VerticalCenterAlign about><H3 about>I'm a Front-end Web Developer and I work at </H3><a href="https://ruin.studio" target="_blank" rel="noopener"><RuinLogo src={logo}/>Studio</a></VerticalCenterAlign>
+          <VerticalCenterAlign about><H3 about>I'm a Front-end Web Developer and I work at </H3><a href="https://ruin.studio" target="_blank" rel="noopener">Studio</a></VerticalCenterAlign>
           <h4>I love scss🤙🏻, react⚛️ & good coffee💯☕️</h4>
           <CubeContainer>
             <h4>I also dig</h4>

@@ -27,16 +27,16 @@ const Wrap = styled.div`
   margin: 0 auto;
 `
 
-const Logo = styled.img`
-  width: 100%;
-  padding-top: 1.25rem;
-  margin: 0;
-  @media (max-width: 693px) {
-    padding-top: 0;
-    width: 50%;
-    margin: 0 auto;
-  }
-`
+// const Logo = styled.img`
+//   width: 100%;
+//   padding-top: 1.25rem;
+//   margin: 0;
+//   @media (max-width: 693px) {
+//     padding-top: 0;
+//     width: 50%;
+//     margin: 0 auto;
+//   }
+// `
 
 const Container = styled.section`
   height: 100vh;
