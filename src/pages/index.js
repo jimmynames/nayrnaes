@@ -104,23 +104,25 @@ export default class Index extends React.Component {
       <Page>
         <Intro />
         <CaseStudy>
-          <Link to=''>
+          <Link to='/animalfarm'>
             <Box>
-              <Copy>Project 1</Copy>
+              <Copy>Animal Farm</Copy>
             </Box>
           </Link>
         </CaseStudy>
+        
         <CaseStudy2>
-          <Link to=''>
+          <Link to='/moove'>
             <Box>
-              <Copy>Project 2</Copy>
+              <Copy>Moove</Copy>
             </Box>
           </Link>
         </CaseStudy2>
+
         <CaseStudy3>
-          <Link to=''>
+          <Link to='/healthwarnings'>
             <Box>
-              <Copy>Project 3</Copy>
+              <Copy>Health Warnings</Copy>
             </Box>
           </Link>
         </CaseStudy3>
