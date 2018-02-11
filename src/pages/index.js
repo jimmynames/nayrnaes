@@ -41,10 +41,22 @@ const CaseStudy3 = styled.section`
   align-content: center;
 `
 
+const Intro = styled.section`
+  height: 100%;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+`
+
 export default class Index extends React.Component {
   render () {
     return (
       <Page>
+          <Intro />
           <CaseStudy />
           <CaseStudy2 />
           <CaseStudy3 />

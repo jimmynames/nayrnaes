@@ -33,25 +33,6 @@ const Wrap = styled.div`
 // `
 
 
-const NavMenu = styled.ul`
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
-  @media (max-width: 693px) {}
-  a {
-    text-decoration: none;
-    }
-  a:hover {}
-`
-
-const NavItem = styled.li`
-  font-size: 18px;
-  color: blue;
-  font-family: '-apple-system', Helvetica;
-  list-style-type: none;
-  text-decoration: none;
-`
-
 const StickyFrame = styled.section`
   height: 100%;
   width: 100%;
@@ -89,8 +70,9 @@ const Container = styled.div`
 const TopRight = styled.div`
   position: fixed;
   top: 0;
-  right: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
 
   display: flex;
   flex-direction: row;
@@ -102,6 +84,28 @@ const TopRight = styled.div`
   &:hover {
     cursor: default;
   }
+  a {
+    text-decoration: none;
+  }
+`
+
+const NavMenu = styled.ul`
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: 693px) {}
+`
+
+const NavItem = styled.li`
+  list-style-type: none;
+  text-decoration: none;
+  margin-left: 3em;
+  text-decoration: none;
+  font-size: 1.17em;
+  color: black;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
 `
 
 const LeftMiddle = styled.div`
@@ -158,7 +162,6 @@ const RightMiddle = styled.div`
   text-transform: uppercase;
   color: white;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
    -webkit-text-stroke-width: 0.1px;
    -webkit-text-stroke-color: white;
@@ -184,12 +187,13 @@ const BottomMiddle = styled.div`
   justify-content: space-between;
   font-family: 'Open Sans Condensed', sans-serif;
   padding-bottom: 1.333em;
-
   a {
     margin: 0;
     text-decoration: none;
     font-size: 1.17em;
-
+    color: black;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
     &:first-child {
       margin-left: 0;
     }
