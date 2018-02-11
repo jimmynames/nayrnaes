@@ -11,15 +11,34 @@ const Page = styled.div`
 const CaseStudy = styled.section`
   height: 100%;
   width: 100%;
-  background: red;
-  border-bottom: 5px solid white;
+  background: #BE1721;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 `
 
 const CaseStudy2 = styled.section`
   height: 100%;
   width: 100%;
-  background: blue;
-  border-bottom: 5px solid white;
+  background: #7EC3ED;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+`
+
+const CaseStudy3 = styled.section`
+  height: 100%;
+  width: 100%;
+  background: #3A3418;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 `
 
 export default class Index extends React.Component {
@@ -28,6 +47,7 @@ export default class Index extends React.Component {
       <Page>
           <CaseStudy />
           <CaseStudy2 />
+          <CaseStudy3 />
       </Page>
     )
   }

@@ -6,6 +6,8 @@ import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import styled  from 'styled-components'
 
+const feather = require('feather-icons')
+
 const Background = styled.div`
   height: 100vh;
   width: 100vw;
@@ -96,18 +98,10 @@ const TopRight = styled.div`
 
   font-family: 'Open Sans Condensed', sans-serif;
   padding: 0.666em 0;
-`
-
-const BottomMiddle = styled.div`
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  font-family: 'Open Sans Condensed', sans-serif;
-  padding: 0.666em 0;
+  user-select: none;
+  &:hover {
+    cursor: default;
+  }
 `
 
 const LeftMiddle = styled.div`
@@ -122,22 +116,26 @@ const LeftMiddle = styled.div`
   font-family: 'PT Sans Narrow';
   font-size: 36.66px;
   padding: 0 0.666em;
-  padding: 0 0.666em;
+
   align-items: center;
   align-content: center;
   margin: auto 0;
-
+  user-select: none;
   text-transform: uppercase;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-width: 0.1px;
    -webkit-text-stroke-color: white;
 
    h3 {
      margin: 0;
+   }
+
+   &:hover {
+     cursor: default;
    }
 `
 
@@ -152,23 +150,55 @@ const RightMiddle = styled.div`
   justify-content: space-between;
   font-family: 'PT Sans Narrow';
   font-size: 36.66px;
-  padding: 0 0.666em;
+  padding-right: 0.666em;
   align-items: center;
   align-content: center;
   margin: auto 0;
-
+  user-select: none;
   text-transform: uppercase;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-width: 0.1px;
    -webkit-text-stroke-color: white;
 
    h3 {
      margin: 0;
    }
+
+   &:hover {
+     cursor: default;
+   }
 `
+
+
+const BottomMiddle = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding-bottom: 1.333em;
+
+  a {
+    margin: 0;
+    text-decoration: none;
+    font-size: 1.17em;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  &:hover {
+    cursor: default;
+  }
+`
+
 
 export default class Template extends React.Component {
   static propTypes = {
@@ -197,8 +227,8 @@ export default class Template extends React.Component {
             </TopRight>
 
             <BottomMiddle className="contact-menu">
-              <a href="">email@email.com</a>
-              <a href="">077777777</a>
+              <a href=""><i data-feather="circle"></i>email@email.com</a>
+              <a href=""><i data-feather="circle"></i>077777777</a>
             </BottomMiddle>
 
             <LeftMiddle className="Sean">
