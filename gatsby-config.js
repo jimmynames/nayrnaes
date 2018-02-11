@@ -5,6 +5,12 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
+    {
+     resolve: `gatsby-plugin-google-fonts`,
+     options: {
+       fonts: [`PT Sans Narrow`, `Open Sans Condensed` ]
+     }
+   }
   //   {
   //   resolve: `gatsby-plugin-google-analytics`,
   //   options: {

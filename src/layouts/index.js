@@ -53,12 +53,14 @@ const NavItem = styled.li`
 const StickyFrame = styled.section`
   height: 100%;
   width: 100%;
-  background-color: lightyellow;
   box-sizing: border-box;
 
   position: absolute;
   top: 0;
   left: 0;
+
+  z-index: 17;
+  background: transparent;
 
   @media (max-width: 693px) {}
   @media (max-width: 414px) {}
@@ -91,6 +93,9 @@ const TopRight = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 0.666em 0;
 `
 
 const BottomMiddle = styled.div`
@@ -100,29 +105,69 @@ const BottomMiddle = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-start;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 0.666em 0;
 `
 
 const LeftMiddle = styled.div`
   position: fixed;
   left: 0;
-  bottom: 0;
-  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  font-family: 'PT Sans Narrow';
+  font-size: 36.66px;
+  padding: 0 0.666em;
+  padding: 0 0.666em;
+  align-items: center;
+  align-content: center;
+  margin: auto 0;
+
+  text-transform: uppercase;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+
+   h3 {
+     margin: 0;
+   }
 `
 
 const RightMiddle = styled.div`
   position: fixed;
   right: 0;
-  bottom: 0;
-  height: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  font-family: 'PT Sans Narrow';
+  font-size: 36.66px;
+  padding: 0 0.666em;
+  align-items: center;
+  align-content: center;
+  margin: auto 0;
 
+  text-transform: uppercase;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
 
+   h3 {
+     margin: 0;
+   }
 `
 
 export default class Template extends React.Component {
@@ -157,17 +202,23 @@ export default class Template extends React.Component {
             </BottomMiddle>
 
             <LeftMiddle className="Sean">
-                <span>S</span>
-                <span>e</span>
-                <span>a</span>
-                <span>n</span>
+                <h3>S</h3>
+                <h3>e</h3>
+                <h3>a</h3>
+                <h3>n</h3>
+                <h3>R</h3>
+                <h3>y</h3>
+                <h3>a</h3>
+                <h3>n</h3>
             </LeftMiddle>
 
             <RightMiddle className="Ryan">
-                 <span>R</span>
-                 <span>y</span>
-                 <span>a</span>
-                 <span>n</span>
+                 <h3>D</h3>
+                 <h3>e</h3>
+                 <h3>s</h3>
+                 <h3>i</h3>
+                 <h3>g</h3>
+                 <h3>n</h3>
             </RightMiddle>
           </Container>
 
