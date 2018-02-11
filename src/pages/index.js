@@ -18,6 +18,16 @@ const CaseStudy = styled.section`
   flex-direction: column;
   align-items: center;
   align-content: center;
+
+  a {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    color: black;
+  }
 `
 
 const CaseStudy2 = styled.section`
@@ -29,6 +39,16 @@ const CaseStudy2 = styled.section`
   flex-direction: column;
   align-items: center;
   align-content: center;
+
+  a {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    color: black;
+  }
 `
 
 const CaseStudy3 = styled.section`
@@ -40,6 +60,16 @@ const CaseStudy3 = styled.section`
   flex-direction: column;
   align-items: center;
   align-content: center;
+
+  a {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    color: black;
+  }
 `
 
 const Intro = styled.section`
@@ -54,23 +84,46 @@ const Intro = styled.section`
 `
 
 const Box = styled.div`
+  padding: 1em 3em;
   border: 2px solid black;
-  padding: 1.5em 3em;
-  background: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+`
+
+const Copy = styled.h3`
+  font-family: 'Open Sans Condensed', sans-serif;
+  h3 {
+    margin: 0;
+    margin-bottom: 1em
+  }
 `
 
 export default class Index extends React.Component {
   render () {
     return (
       <Page>
-          <Intro />
-          <CaseStudy>
-            <Link to="">
-              <Box />
-            </Link>
-          </CaseStudy>
-          <CaseStudy2 />
-          <CaseStudy3 />
+        <Intro />
+        <CaseStudy>
+          <Link to=''>
+            <Box>
+              <Copy>Project 1</Copy>
+            </Box>
+          </Link>
+        </CaseStudy>
+        <CaseStudy2>
+          <Link to=''>
+            <Box>
+              <Copy>Project 2</Copy>
+            </Box>
+          </Link>
+        </CaseStudy2>
+        <CaseStudy3>
+          <Link to=''>
+            <Box>
+              <Copy>Project 3</Copy>
+            </Box>
+          </Link>
+        </CaseStudy3>
       </Page>
     )
   }

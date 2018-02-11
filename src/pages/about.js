@@ -1,4 +1,4 @@
-import React from "react"
+import React from 'react'
 import styled from 'styled-components'
 // import Page from './../components/Page'
 
@@ -31,14 +31,16 @@ const AboutContainer = styled.div`
 
 const Copy = styled.h3`
   font-family: 'Open Sans Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
   h3 {
     margin: 0;
     margin-bottom: 1em
+    -webkit-font-smoothing: antialiased;
   }
 `
 
 export default class Index extends React.Component {
-  render() {
+  render () {
     return (
       <Page>
         <AboutContainer>
