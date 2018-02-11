@@ -7,20 +7,12 @@ import Helmet from "react-helmet"
 import styled  from 'styled-components'
 
 const Background = styled.div`
-  height: 100%;
-  width: 100%;
-  background: black;
+  height: 100vh;
+  width: 100vw;
 `
 
 const Layout = styled.div`
-  display: flex;
-  flex-direcrion: row;
-  ${'' /* background-color: black; */}
-
-  @media (max-width: 693px) {
-    flex-direction: column;
-    height: 100vh;
-  }
+  @media (max-width: 693px) {}
 `
 const Wrap = styled.div`
 	max-width: 1200px;
@@ -38,160 +30,99 @@ const Wrap = styled.div`
 //   }
 // `
 
-const Container = styled.section`
-  height: 100vh;
-  width: 20%;
-  background-color: black;
-  box-sizing: border-box;
-  @media (max-width: 693px) {
-    width: 100%;
-    height: 30vh;
-    padding: 0.75em;
-  }
-  @media (max-width: 414px) {
-    height: 25vh;
-  }
-
-`
-
-const PaddingMobile = styled.div`
-@media (max-width: 414px) {
-  box-sizing: border-box;
-}
-`
-
-
-const PageRender = styled.div`
-  width: 80%;
-  height: 100vh;
-  background-color: black;
-  padding: 0.75rem;
-  @media (max-width: 693px) {
-    width: 100%;
-    height: auto;
-  }
-  @media (max-width: 414px) {
-    width: 100%;
-    height: auto;
-  }
-`
 
 const NavMenu = styled.ul`
   text-decoration: none;
   margin: 0;
   padding: 0;
-  @media (max-width: 693px) {  }
-
+  @media (max-width: 693px) {}
   a {
     text-decoration: none;
-    color: white;
-  }
-
-  a:hover {
-    color: white;
-  }
+    }
+  a:hover {}
 `
 
 const NavItem = styled.li`
   font-size: 18px;
-  color: white;
-  padding: 0.666em;
+  color: blue;
   font-family: '-apple-system', Helvetica;
   list-style-type: none;
   text-decoration: none;
-  text-align: left;
-  margin: 1.5em 0;
-  background-image: linear-gradient(to right,
-                                      #CCFF33,
-                                      #CCFF33 50%,
-                                      transparent 50%,
-                                      transparent);
-    background-position: 100% 0;
-    background-size: 200% 100%;
-    transition: all .2s ease-in;
-    width: 95%;
-  a {
-    text-decoration: none;
-    color: white;
-  }
-  @media (max-width: 693px) {
-    padding: 0.1333em;
-    margin: 0;
-  }
-  &:before {
-  content: "";
-  position: absolute;
+`
+
+const StickyFrame = styled.section`
+  height: 100%;
   width: 100%;
-  height: 5px;
+  background-color: lightyellow;
+  box-sizing: border-box;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (max-width: 693px) {}
+  @media (max-width: 414px) {}
+
+`
+
+
+const PageRender = styled.div`
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (max-width: 693px) {}
+  @media (max-width: 414px) {}
+`
+
+const Container = styled.div`
+  position: relative;
+`
+
+const TopRight = styled.div`
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+`
+
+const BottomMiddle = styled.div`
+  position: fixed;
   bottom: 0;
   left: 0;
-  background: linear-gradient(-45deg, coral, blue, purple, orange);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 15s ease infinite;
-	-moz-animation: Gradient 15s ease infinite;
-	animation: Gradient 15s ease infinite;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
-}
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`
 
-  &:hover,
-  &:visited,
-  &:focus {
-    text-decoration: none;
-  }
-  &:hover {
-   padding-left: 1em;
-   color: black;
-   background-position: 0 0;
-    a {
-      color: black;
-    }
-     &:before {
-     visibility: visible;
-     -webkit-transform: scaleX(1);
-     transform: scaleX(1);
-    }
-  }
-  &:hover
+const LeftMiddle = styled.div`
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
 
-  @-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
+const RightMiddle = styled.div`
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
 
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
 `
 
 export default class Template extends React.Component {
@@ -203,34 +134,53 @@ export default class Template extends React.Component {
     return (
       <Background>
       <Wrap>
-        <Layout className="Layout Nav">
+        <Layout className="Layout">
 
         <Helmet
-          title="jimmyNames"
+          title="Sean Ryan Graphic Design"
           meta={[
-            { name: "description", content: "Jimmy Names" },
-            { name: "keywords", content: "jimmy names, jimmyNames" },
+            { name: "description", content: "Sean Ryan Design" },
+            { name: "keywords", content: "Sean Ryan Design, Sean Ryan" },
           ]}
         />
 
-        <Container className="LayoutContainer">
-          <PaddingMobile>
-            <Link to="/">LINK</Link>
+        <StickyFrame className="Layout--Container Sticky">
+          <Container>
+            <TopRight className="nav-menu">
+              <Link to="/"><NavItem>Portfolio</NavItem></Link>
+              <Link to="/about/"><NavItem>About</NavItem></Link>
+            </TopRight>
 
-            <NavMenu className="Nav Menu">
-              <Link to="/about/"><NavItem>About.i</NavItem></Link>
-              <Link to="/me/"><NavItem>Me.png</NavItem></Link>
-              <a href=''><NavItem>Cv.pdf</NavItem></a>
-            </NavMenu>
-          </PaddingMobile>
-        </Container>
+            <BottomMiddle className="contact-menu">
+              <a href="">email@email.com</a>
+              <a href="">077777777</a>
+            </BottomMiddle>
+
+            <LeftMiddle className="Sean">
+                <span>S</span>
+                <span>e</span>
+                <span>a</span>
+                <span>n</span>
+            </LeftMiddle>
+
+            <RightMiddle className="Ryan">
+                 <span>R</span>
+                 <span>y</span>
+                 <span>a</span>
+                 <span>n</span>
+            </RightMiddle>
+          </Container>
+
+
+
+        </StickyFrame>
 
         <PageRender className='Page Render'>
           {this.props.children()}
         </PageRender>
 
       </Layout>
-    </Wrap>
+      </Wrap>
     </Background>
     )
   }
