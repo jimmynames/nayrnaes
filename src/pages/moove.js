@@ -34,6 +34,8 @@ const Intro = styled.section`
   flex-direction: column;
   align-items: center;
   align-content: center;
+
+  background: #7EC3ED;
 `
 
 const Image = styled.img`

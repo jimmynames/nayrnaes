@@ -2,11 +2,17 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
+import mouse from './../images/mouse.gif'
+
 const Page = styled.div`
   width: 100%;
   height: 100%;
 
   @media (max-width: 616px ) {}
+`
+
+const MouseIcon = styled.img`
+  height: 100px;
 `
 
 const CaseStudy = styled.section`
@@ -102,7 +108,9 @@ export default class Index extends React.Component {
   render () {
     return (
       <Page>
-        <Intro />
+        <Intro>
+          <MouseIcon src={mouse} />
+        </Intro>
         <CaseStudy>
           <Link to='/animalfarm'>
             <Box>
