@@ -18,7 +18,6 @@ const AboutContainer = styled.div`
   position: relative;
   height: 80%;
   width: 80%;
-  ${'' /* border: 2px solid black; */}
   padding: 1em 2em;
   padding-top: 0;
 

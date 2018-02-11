@@ -1,9 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
 import Image1 from './../images/Smoking1.png'
 import Image2 from './../images/Smoking2.png'
 import Image3 from './../images/Smoking3.png'
+import Back from './../images/back.png'
 
 const Page = styled.div`
   width: 100%;
@@ -35,6 +37,17 @@ const Intro = styled.section`
   background: #FEDC00;
 `
 
+const Outro = styled.section`
+height: 100%;
+width: 100%;
+background: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+align-content: center;
+`
+
 const Image = styled.img`
   height: 70%;
   width: 100%;
@@ -49,6 +62,10 @@ const Copy = styled.h3`
     margin: 0;
     margin-bottom: 1em
   }
+`
+
+const BackIcon = styled.img`
+  height: 100px;
 `
 
 export default class Health extends React.Component {
@@ -70,6 +87,12 @@ export default class Health extends React.Component {
         <ImageContainer>
           <Image src={Image3} />
         </ImageContainer>
+
+        <Outro>
+          <Link to='/'>
+            <BackIcon src={Back} />
+          </Link>
+        </Outro>
 
       </Page>
     )

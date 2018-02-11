@@ -1,10 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
 import Image1 from './../images/AnimalFarm1.png'
 import Image2 from './../images/AnimalFarm2.jpg'
 import Image3 from './../images/AnimalFarm3.png'
 import Image4 from './../images/AnimalFarm4.jpg'
+import Back from './../images/back.png'
 
 const Page = styled.div`
   width: 100%;
@@ -36,6 +38,17 @@ const Intro = styled.section`
   background: #BE1721;
 `
 
+const Outro = styled.section`
+height: 100%;
+width: 100%;
+background: white;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+align-content: center;
+`
+
 const Image = styled.img`
   height: 70%;
   width: 100%;
@@ -50,6 +63,10 @@ const Copy = styled.h3`
     margin: 0;
     margin-bottom: 1em
   }
+`
+
+const BackIcon = styled.img`
+  height: 100px;
 `
 
 export default class Animal extends React.Component {
@@ -76,6 +93,11 @@ export default class Animal extends React.Component {
           <Image src={Image4} />
         </ImageContainer>
 
+        <Outro>
+          <Link to='/'>
+            <BackIcon src={Back} />
+          </Link>
+        </Outro>
       </Page>
     )
   }
