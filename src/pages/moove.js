@@ -70,6 +70,27 @@ const Copy = styled.h3`
 const BackIcon = styled.img`
   height: 100px;
 `
+const AboutContainer = styled.div`
+  box-sizing: border-box;
+  position: relative;
+  height: 80%;
+  width: 80%;
+  padding: 1em 2em;
+  padding-top: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  border-bottom: 3px solid #7EC3ED;
+`
+
+const CopyP = styled.p`
+font-family: 'Open Sans Condensed', sans-serif;
+text-transform: uppercase;
+letter-spacing: 1px;
+`
 
 export default class Moove extends React.Component {
   render () {
@@ -78,6 +99,13 @@ export default class Moove extends React.Component {
         <Intro>
           <Copy>Moove</Copy>
         </Intro>
+
+        <Outro>
+          <AboutContainer>
+            <CopyP>This was my credited project for the first year of my college course. The brief was to create a corporate identity for a company of my choosing or to create one of my own. After choosing the latter, I envisaged the company ‘On the Moove’. A milkshake company aimed at providing a healthy alternative to fast food restaurants situated at motorway service stations.</CopyP>
+            <CopyP>The cows within the logo were to demonstrate that the products had a natural background. The direction of the cows was to sinuate the two directions that flow on motorways, working with the old imagery of farm animals stacked high, to create a playful appearance.</CopyP>
+          </AboutContainer>
+        </Outro>
 
         <ImageContainer>
           <Image src={Image1} />

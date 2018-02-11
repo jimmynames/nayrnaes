@@ -230,7 +230,7 @@ export default class Template extends React.Component {
             </TopRight>
 
             <BottomMiddle className="contact-menu">
-              <a href="mailto:hello@seanryan.design"><i data-feather="circle"></i>hello at seanryan.design</a>
+              <a href="mailto:hello@seanryan.design"><i data-feather="circle"></i>hello@seanryan.design</a>
 
               <a href="tel:07944424437"><i data-feather="circle"></i>07944424437</a>
             </BottomMiddle>

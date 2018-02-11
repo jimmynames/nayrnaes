@@ -69,6 +69,30 @@ const BackIcon = styled.img`
   height: 100px;
 `
 
+const AboutContainer = styled.div`
+  box-sizing: border-box;
+  position: relative;
+  height: 80%;
+  width: 80%;
+  padding: 1em 2em;
+  padding-top: 0;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  border-bottom: 3px solid #BE1721;
+`
+
+
+const CopyP = styled.p`
+font-family: 'Open Sans Condensed', sans-serif;
+text-transform: uppercase;
+letter-spacing: 1px;
+`
+
+
 export default class Animal extends React.Component {
   render () {
     return (
@@ -76,6 +100,14 @@ export default class Animal extends React.Component {
         <Intro>
           <Copy>Animal Farm</Copy>
         </Intro>
+
+        <Outro>
+          <AboutContainer>
+            <CopyP>For this project I followed a live brief set by Penguin Random House, for the Student Design Awards 2018. They asked to create a front cover that redesigned the timeless novel, Animal Farm by George Orwell.</CopyP>
+            <CopyP>The two front covers I created where to give a variety of style. One focusing on the typography I created. By adding the hyphen between the word ‘animal’ to create the appearance of three words,
+              the aim of which to add a Russian feel to an English word. The other a more visual display using negative space to highlight the main character animals throughout the novel, trying to create an overshadowing pig on the front cover.</CopyP>
+          </AboutContainer>
+        </Outro>
 
         <ImageContainer>
           <Image src={Image1} />
