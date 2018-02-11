@@ -117,7 +117,7 @@ const LeftMiddle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'PT Sans Narrow';
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 36.66px;
   padding: 0 0.666em;
 
@@ -126,13 +126,13 @@ const LeftMiddle = styled.div`
   margin: auto 0;
   user-select: none;
   text-transform: uppercase;
-  color: white;
+  color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
-   -webkit-text-stroke-width: 0.1px;
-   -webkit-text-stroke-color: white;
+  ${ '' /* -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: white; */}
 
    h3 {
      margin: 0;
@@ -152,7 +152,7 @@ const RightMiddle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'PT Sans Narrow';
+  font-family: 'Open Sans Condensed', sans-serif;
   font-size: 36.66px;
   padding-right: 0.666em;
   align-items: center;
@@ -160,11 +160,11 @@ const RightMiddle = styled.div`
   margin: auto 0;
   user-select: none;
   text-transform: uppercase;
-  color: white;
+  color: black;
   -webkit-font-smoothing: antialiased;
-   -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+   ${ '' /* -webkit-text-fill-color: transparent;
    -webkit-text-stroke-width: 0.1px;
-   -webkit-text-stroke-color: white;
+   -webkit-text-stroke-color: white; */}
 
    h3 {
      margin: 0;
