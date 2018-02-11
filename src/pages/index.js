@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'gatsby-link'
 
 const Page = styled.div`
   width: 100%;
@@ -52,12 +53,22 @@ const Intro = styled.section`
   align-content: center;
 `
 
+const Box = styled.div`
+  border: 2px solid black;
+  padding: 1.5em 3em;
+  background: white;
+`
+
 export default class Index extends React.Component {
   render () {
     return (
       <Page>
           <Intro />
-          <CaseStudy />
+          <CaseStudy>
+            <Link to="">
+              <Box />
+            </Link>
+          </CaseStudy>
           <CaseStudy2 />
           <CaseStudy3 />
       </Page>

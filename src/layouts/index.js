@@ -232,6 +232,7 @@ export default class Template extends React.Component {
 
             <BottomMiddle className="contact-menu">
               <a href=""><i data-feather="circle"></i>email@email.com</a>
+
               <a href=""><i data-feather="circle"></i>077777777</a>
             </BottomMiddle>
 
@@ -254,6 +255,8 @@ export default class Template extends React.Component {
                  <h3>g</h3>
                  <h3>n</h3>
             </RightMiddle>
+
+
           </Container>
 
 
