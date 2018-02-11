@@ -42,6 +42,8 @@ const Image = styled.img`
 
 const Copy = styled.h3`
   font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   h3 {
     margin: 0;
     margin-bottom: 1em

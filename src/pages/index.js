@@ -54,7 +54,7 @@ const CaseStudy2 = styled.section`
 const CaseStudy3 = styled.section`
   height: 100%;
   width: 100%;
-  background: #3A3418;
+  background: #FEDC00;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -110,7 +110,7 @@ export default class Index extends React.Component {
             </Box>
           </Link>
         </CaseStudy>
-        
+
         <CaseStudy2>
           <Link to='/moove'>
             <Box>
