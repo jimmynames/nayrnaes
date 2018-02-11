@@ -85,13 +85,11 @@ const AboutContainer = styled.div`
   border-bottom: 3px solid #BE1721;
 `
 
-
 const CopyP = styled.p`
 font-family: 'Open Sans Condensed', sans-serif;
 text-transform: uppercase;
 letter-spacing: 1px;
 `
-
 
 export default class Animal extends React.Component {
   render () {

@@ -94,6 +94,11 @@ const Box = styled.div`
   border: 2px solid black;
   text-transform: uppercase;
   letter-spacing: 1px;
+
+  &:hover {
+
+
+  }
 `
 
 const Copy = styled.h3`
