@@ -203,7 +203,6 @@ const BottomMiddle = styled.div`
   }
 `
 
-
 export default class Template extends React.Component {
   static propTypes = {
     children: PropTypes.func,
@@ -231,7 +230,7 @@ export default class Template extends React.Component {
             </TopRight>
 
             <BottomMiddle className="contact-menu">
-              <a href="mailto:"><i data-feather="circle"></i>email@email.com</a>
+              <a href="mailto:hello@seanryan.design"><i data-feather="circle"></i>hello at seanryan.design</a>
 
               <a href="tel:07944424437"><i data-feather="circle"></i>07944424437</a>
             </BottomMiddle>
