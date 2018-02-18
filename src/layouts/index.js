@@ -87,6 +87,8 @@ const TopRight = styled.div`
   a {
     text-decoration: none;
   }
+
+  padding-top:  1.333em;
 `
 
 const NavMenu = styled.ul`
@@ -125,7 +127,6 @@ const LeftMiddle = styled.div`
   align-content: center;
   margin: auto 0;
   user-select: none;
-  text-transform: uppercase;
   color: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -159,7 +160,6 @@ const RightMiddle = styled.div`
   align-content: center;
   margin: auto 0;
   user-select: none;
-  text-transform: uppercase;
   color: black;
   -webkit-font-smoothing: antialiased;
    ${ '' /* -webkit-text-fill-color: transparent;
@@ -236,18 +236,18 @@ export default class Template extends React.Component {
             </BottomMiddle>
 
             <LeftMiddle className="Sean">
-                <h3>S</h3>
+                <h3>s</h3>
                 <h3>e</h3>
                 <h3>a</h3>
                 <h3>n</h3>
-                <h3>R</h3>
+                <h3>r</h3>
                 <h3>y</h3>
                 <h3>a</h3>
                 <h3>n</h3>
             </LeftMiddle>
 
             <RightMiddle className="Ryan">
-                 <h3>D</h3>
+                 <h3>d</h3>
                  <h3>e</h3>
                  <h3>s</h3>
                  <h3>i</h3>

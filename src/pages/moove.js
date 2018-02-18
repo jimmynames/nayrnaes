@@ -88,8 +88,44 @@ const AboutContainer = styled.div`
 
 const CopyP = styled.p`
 font-family: 'Open Sans Condensed', sans-serif;
-text-transform: uppercase;
 letter-spacing: 1px;
+`
+
+const IconScroll = styled.div`
+
+width: 15px;
+height: 27px;
+margin-left: -10px;
+top: 60%;
+margin-top: -35px;
+box-shadow: inset 0 0 0 1px black;
+border-radius: 25px;
+position: absolute;
+left: 50%;
+
+&:before {
+  content: '';
+  width: 2px;
+  height: 2px;
+box-shadow: inset 0 0 0 1px black;
+  margin-left: -1px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  position: absolute;
+  left: 50%;
+}
+
+@keyframes scroll {
+  0% {  opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
 `
 
 export default class Moove extends React.Component {
@@ -98,12 +134,13 @@ export default class Moove extends React.Component {
       <Page>
         <Intro>
           <Copy>Moove</Copy>
+          <IconScroll />
         </Intro>
 
         <Outro>
           <AboutContainer>
-            <CopyP>This was my credited project for the first year of my college course. The brief was to create a corporate identity for a company of my choosing or to create one of my own. After choosing the latter, I envisaged the company ‘On the Moove’. A milkshake company aimed at providing a healthy alternative to fast food restaurants situated at motorway service stations.</CopyP>
-            <CopyP>The cows within the logo were to demonstrate that the products had a natural background. The direction of the cows was to sinuate the two directions that flow on motorways, working with the old imagery of farm animals stacked high, to create a playful appearance.</CopyP>
+            <CopyP>This is my credited project for the first year of my college course. The brief was to create a corporate identity for a company of my choosing or to create a company of my own. After choosing the latter, I envisaged a milkshake company called ‘On the Moove’, aimed at providing and inspiring a healthy alternative to the fast food industry, located at motorway service stations.</CopyP>
+            <CopyP>The cows within the logo are to emphasise the products natural foundation and ethos. The juxtaposing of the cows reflects the opposing directions of UK motorways; utilising the rural imagery of farm animals stacked high.</CopyP>
           </AboutContainer>
         </Outro>
 

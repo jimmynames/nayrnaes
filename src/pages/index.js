@@ -109,12 +109,49 @@ const Copy = styled.h3`
   }
 `
 
+const IconScroll = styled.div`
+
+width: 15px;
+height: 27px;
+margin-left: -10px;
+top: 60%;
+margin-top: -35px;
+box-shadow: inset 0 0 0 1px black;
+border-radius: 25px;
+position: absolute;
+left: 50%;
+
+&:before {
+  content: '';
+  width: 2px;
+  height: 2px;
+  background: black;
+  margin-left: -1px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  position: absolute;
+  left: 50%;
+}
+
+@keyframes scroll {
+  0% {  opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+`
+
 export default class Index extends React.Component {
   render () {
     return (
       <Page>
         <Intro>
-          <MouseIcon src={mouse} />
+          <IconScroll />
         </Intro>
         <CaseStudy>
           <Link to='/animalfarm'>

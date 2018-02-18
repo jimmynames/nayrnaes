@@ -85,10 +85,47 @@ const AboutContainer = styled.div`
   border-bottom: 3px solid #BE1721;
 `
 
+
 const CopyP = styled.p`
 font-family: 'Open Sans Condensed', sans-serif;
-text-transform: uppercase;
 letter-spacing: 1px;
+`
+
+const IconScroll = styled.div`
+
+width: 15px;
+height: 27px;
+margin-left: -10px;
+top: 60%;
+margin-top: -35px;
+box-shadow: inset 0 0 0 1px black;
+border-radius: 25px;
+position: absolute;
+left: 50%;
+
+&:before {
+  content: '';
+  width: 2px;
+  height: 2px;
+box-shadow: inset 0 0 0 1px black;
+  margin-left: -1px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+  position: absolute;
+  left: 50%;
+}
+
+@keyframes scroll {
+  0% {  opacity: 1; }
+  100% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
 `
 
 export default class Animal extends React.Component {
@@ -97,13 +134,13 @@ export default class Animal extends React.Component {
       <Page>
         <Intro>
           <Copy>Animal Farm</Copy>
+          <IconScroll />
         </Intro>
 
         <Outro>
           <AboutContainer>
             <CopyP>For this project I followed a live brief set by Penguin Random House, for the Student Design Awards 2018. They asked to create a front cover that redesigned the timeless novel, Animal Farm by George Orwell.</CopyP>
-            <CopyP>The two front covers I created where to give a variety of style. One focusing on the typography I created. By adding the hyphen between the word ‘animal’ to create the appearance of three words,
-              the aim of which to add a Russian feel to an English word. The other a more visual display using negative space to highlight the main character animals throughout the novel, trying to create an overshadowing pig on the front cover.</CopyP>
+            <CopyP>The two front covers I created where to give a variety of style. One focusing on the typography I created. By adding the hyphen between the word ‘animal’ to create the appearance of three words, the aim of which to add a Russian feel to an English word. The other a more visual display using negative space to highlight the main character animals throughout the novel, trying to create an overshadowing pig on the front cover.</CopyP>
           </AboutContainer>
         </Outro>
 
