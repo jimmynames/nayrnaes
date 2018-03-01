@@ -137,6 +137,7 @@ const LeftMiddle = styled.div`
 
    h3 {
      margin: 0;
+     transform: rotate(-90deg);
    }
 
    &:hover {
@@ -168,6 +169,7 @@ const RightMiddle = styled.div`
 
    h3 {
      margin: 0;
+     transform: rotate(90deg);
    }
 
    &:hover {
@@ -236,14 +238,14 @@ export default class Template extends React.Component {
             </BottomMiddle>
 
             <LeftMiddle className="Sean">
-                <h3>s</h3>
-                <h3>e</h3>
-                <h3>a</h3>
                 <h3>n</h3>
-                <h3>r</h3>
+                <h3>a</h3>
                 <h3>y</h3>
-                <h3>a</h3>
+                <h3>r</h3>
                 <h3>n</h3>
+                <h3>a</h3>
+                <h3>e</h3>
+                <h3>s</h3>
             </LeftMiddle>
 
             <RightMiddle className="Ryan">
