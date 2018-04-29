@@ -120,7 +120,6 @@ const SubTitle = () => {
   `
 }
 
-
 const AboutContainer = styled.div`
   box-sizing: border-box;
   position: relative;
