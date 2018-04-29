@@ -107,7 +107,19 @@ left: 50%;
 const CopyP = styled.p`
 font-family: 'Open Sans Condensed', sans-serif;
 letter-spacing: 1px;
+${({sub}) => (sub) ? SubTitle(sub) : null};
 `
+
+const SubTitle = () => {
+  return `
+  padding: 1em 2em;
+  padding-top: 0;
+  @media (max-width: 616px) {
+    width: 60%;
+  }
+  `
+}
+
 
 const AboutContainer = styled.div`
   box-sizing: border-box;
@@ -142,7 +154,7 @@ export default class Misc extends React.Component {
 
         <ImageContainer>
           <Image src={Image9} />
-          <CopyP>Logo design for Mopheus, Landscape Gardening Business</CopyP>
+          <CopyP sub>Logo design for Mopheus, Landscape Gardening Business</CopyP>
         </ImageContainer>
 
         <ImageContainer>
@@ -151,7 +163,7 @@ export default class Misc extends React.Component {
 
         <ImageContainer>
           <Image src={Image3} />
-          <CopyP>Logo design for Rosceite, Holiday home-stay Business</CopyP>
+          <CopyP sub>Logo design for Rosceite, Holiday home-stay Business</CopyP>
         </ImageContainer>
 
         <ImageContainer>
@@ -160,7 +172,7 @@ export default class Misc extends React.Component {
 
         <ImageContainer>
           <Image src={Image5} />
-          <CopyP>Cinema 4D</CopyP>
+          <CopyP sub>Cinema 4D</CopyP>
         </ImageContainer>
 
         <ImageContainer>
@@ -173,7 +185,7 @@ export default class Misc extends React.Component {
 
         <ImageContainer>
           <Image src={Image2} />
-          <CopyP>Logo design</CopyP>
+          <CopyP sub>Logo design</CopyP>
         </ImageContainer>
 
         <ImageContainer>

@@ -144,6 +144,15 @@ const LeftMiddle = styled.div`
    h3 {
      margin: 0;
      transform: rotate(-90deg);
+     transition: -webkit-text-stroke .3s ease;
+     transition-delay: 1s;
+     color: black;
+
+     &:hover {
+       -webkit-text-stroke: 2px black;
+       color: white;
+       transition: color 0s;
+     }
    }
 
    &:hover {
@@ -176,6 +185,15 @@ const RightMiddle = styled.div`
    h3 {
      margin: 0;
      transform: rotate(90deg);
+     transition: -webkit-text-stroke .3s ease;
+     transition-delay: 1s;
+     color: black;
+
+     &:hover {
+       -webkit-text-stroke: 2px black;
+       color: white;
+       transition: color 0s;
+     }
    }
 
    &:hover {
@@ -208,6 +226,12 @@ const BottomMiddle = styled.div`
   }
   &:hover {
     cursor: default;
+  }
+
+  @media (max-width: 616px) {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 15px;
   }
 `
 
