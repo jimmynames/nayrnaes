@@ -2,17 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import Link from 'gatsby-link'
 
-import mouse from './../images/mouse.gif'
-
 const Page = styled.div`
   width: 100%;
   height: 100%;
 
   @media (max-width: 616px ) {}
-`
-
-const MouseIcon = styled.img`
-  height: 100px;
 `
 
 const CaseStudy = styled.section`
@@ -116,7 +110,7 @@ height: 27px;
 margin-left: -10px;
 top: 60%;
 margin-top: -35px;
-box-shadow: inset 0 0 0 1px black;
+box-shadow: inset 0 0 0 2px black;
 border-radius: 25px;
 position: absolute;
 left: 50%;
@@ -126,7 +120,7 @@ left: 50%;
   width: 2px;
   height: 2px;
   background: black;
-  margin-left: -1px;
+  margin-left: 0px;
   top: 8px;
   border-radius: 4px;
   animation-duration: 1.5s;
@@ -134,6 +128,7 @@ left: 50%;
   animation-name: scroll;
   position: absolute;
   left: 50%;
+  transform: translate(-50%);
 }
 
 @keyframes scroll {

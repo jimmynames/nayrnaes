@@ -5,8 +5,9 @@ import PropTypes from "prop-types"
 import Link from "gatsby-link"
 import Helmet from "react-helmet"
 import styled  from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
-const feather = require('feather-icons')
+// const feather = require('feather-icons')
 
 const Background = styled.div`
   height: 100vh;
@@ -102,12 +103,17 @@ const NavMenu = styled.ul`
 const NavItem = styled.li`
   list-style-type: none;
   text-decoration: none;
-  margin-left: 3em;
+  text-align: center;
   text-decoration: none;
   font-size: 1.17em;
+  padding-bottom: .111em;
   color: black;
   letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
+`
+
+const NavLinkCustom = styled(NavLink)`
+    margin-left: 3em;
 `
 
 const LeftMiddle = styled.div`
@@ -205,6 +211,12 @@ const BottomMiddle = styled.div`
   }
 `
 
+const ActiveStyle = {
+  borderBottom: '2px solid black',
+  opacity: '1',
+  transition: 'opacity 0.333s ease'
+}
+
 export default class Template extends React.Component {
   static propTypes = {
     children: PropTypes.func,
@@ -227,8 +239,9 @@ export default class Template extends React.Component {
         <StickyFrame className="Layout--Container Sticky">
           <Container>
             <TopRight className="nav-menu">
-              <Link to="/"><NavItem>Portfolio</NavItem></Link>
-              <Link to="/about/"><NavItem>About</NavItem></Link>
+              <NavLinkCustom exact to="/" activeStyle={ActiveStyle}><NavItem>Projects</NavItem></NavLinkCustom>
+              <NavLinkCustom to="/misc/" activeStyle={ActiveStyle}><NavItem>Misc</NavItem></NavLinkCustom>
+              <NavLinkCustom to="/about/" activeStyle={ActiveStyle}><NavItem>About</NavItem></NavLinkCustom>
             </TopRight>
 
             <BottomMiddle className="contact-menu">
