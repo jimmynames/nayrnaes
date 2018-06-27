@@ -79,7 +79,7 @@ const TopRight = styled.div`
   flex-direction: row;
   justify-content: flex-end;
 
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   padding: 0.666em 0;
   user-select: none;
   &:hover {
@@ -125,7 +125,7 @@ const LeftMiddle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 36.66px;
   padding: 0 0.666em;
 
@@ -169,7 +169,7 @@ const RightMiddle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-size: 36.66px;
   padding-right: 0.666em;
   align-items: center;
@@ -211,7 +211,7 @@ const BottomMiddle = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   padding-bottom: 1.333em;
   a {
     margin: 0;
