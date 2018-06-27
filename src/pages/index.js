@@ -24,7 +24,7 @@ const CaseStudy = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: black;
   }
@@ -45,7 +45,7 @@ const CaseStudy2 = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: black;
   }
@@ -66,7 +66,7 @@ const CaseStudy3 = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     color: black;
   }
@@ -96,7 +96,7 @@ const Box = styled.div`
 `
 
 const Copy = styled.h3`
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   h3 {
     margin: 0;
     margin-bottom: 1em

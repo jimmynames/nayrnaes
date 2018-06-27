@@ -105,7 +105,7 @@ left: 50%;
 `
 
 const CopyP = styled.p`
-font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Open Sans', sans-serif;
 letter-spacing: 1px;
 ${({sub}) => (sub) ? SubTitle(sub) : null};
 `

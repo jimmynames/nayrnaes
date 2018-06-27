@@ -56,7 +56,7 @@ const Image = styled.img`
 `
 
 const Copy = styled.h3`
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   h3 {
@@ -86,7 +86,7 @@ const AboutContainer = styled.div`
 `
 
 const CopyP = styled.p`
-font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Open Sans', sans-serif;
 letter-spacing: 1px;
 `
 

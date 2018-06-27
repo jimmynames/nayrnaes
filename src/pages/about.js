@@ -29,7 +29,7 @@ const AboutContainer = styled.div`
 `
 
 const Copy = styled.h3`
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   h3 {
     margin: 0;
